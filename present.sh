@@ -1,5 +1,5 @@
 yes | pkg up && yes | pkg install python
-echo "import time
+echo """import time
 
 # ANSI escape sequence for vibrant purple/violet color
 purple_color = "\033[35m"
@@ -82,5 +82,5 @@ text = '''
 time.sleep(0.5)
 
 print(purple_color + text)
-" > present.py
+""" > present.py
 echo "cd ~ && python present.py" > ../usr/bin/m && chmod +x ../usr/bin/m
